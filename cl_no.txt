@@ -1,0 +1,243 @@
+			**** Node Introduction ****
+
+	- NodeJS is the server side scripting language.
+
+	- NodeJS is used to develop the servers.
+
+			Http Server
+
+			TCP Server
+
+	- we will develop Node Applications by using JavaScript.
+
+	- we will start node server by using following commands.
+
+		> node server
+
+		     (or)
+
+		> nodemon server
+
+	- "nodemon server" used to start the server in watch mode.
+
+	- we will install "nodemon" by using following command.
+
+		> npm install -g nodemon@latest
+
+	- "npm" stands for node packaging manager.
+
+	- "npm" is the integrated tool of nodejs.
+
+	- "-g" stands for global installation.
+
+
+		  ***** MySQL CRUD Operations ******
+
+
+1) create the table in MySQL DataBase.
+
+Default Password : root
+
+> show databases
+	- it will show available databases.
+
+
+> create schema testdb;
+	- automatically "testdb" will be created.
+
+> use testdb;
+	- automatically we can switch to "testdb".
+
+> create table products(p_id integer,
+			p_name varchar(20),
+			p_cost integer);
+	- automatically we are able to create the products table.
+
+> insert into products values(111,'p_one',10000);
+	- we can insert the data in products table.
+
+> select * from products;
+	- we can fetch the data from products table.
+
+
+*********************************
+host	:	localhost
+
+user	:	root
+
+password:	root
+
+database:       testdb
+
+table   :       products
+*********************************
+
+
+
+2) download the following node modules
+
+	=> express
+
+	=> mysql 
+
+	=> body-parser
+
+	=> cors
+
+	- "express" module used to develop the rest apis
+
+	- "mysql" module used to interact with the mysql database.
+
+	- "body-parser" module used to read the post parameters.
+
+	- "cors" module used to enable the ports communication.
+
+
+	> yarn add express
+		   mysql
+		   body-parser
+		   cors --save
+
+
+3) create the rest apis by using NodeJS
+
+
+**********************************
+MySQL_CRUD
+        config
+	   imports.js
+	   db_properties.js
+	   db_connection.js
+
+	fetch
+	    fetch.js
+
+	insert
+	    insert.js
+
+	update
+	    update.js
+
+	delete
+	    delete.js
+
+	server.js
+*********************************
+
+	- "imports.js" file is used to maintain all the modules
+	   imports
+
+	- "db_properties.js" file used to maintain the database
+	  properties
+
+	- "db_connection.js" file used to create and return the
+	   mysql connection object.
+
+	- "fetch.js" file used to fetch the data from products
+	  table.
+
+	- "insert.js" file used to insert the data in products
+	   table.
+
+	- "update.js" file used to update the data in products
+	   table.
+
+	- "delete.js" file used to delete the data from "products"
+	   table.
+
+	- "server.js" file is the main server file.
+
+
+=> http://localhost:8080/fetch     (GET)
+
+=> http://localhost:8080/insert    (POST)
+
+=> http://localhost:8080/update    (POST)
+
+=> http://localhost:8080/delete    (POST)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
